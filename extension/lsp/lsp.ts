@@ -353,7 +353,8 @@ export class MojoLSPManager extends DisposableContext {
     );
 
     this.logger.lsp.info(
-      `Launching Language Server '${initializationOptions.serverPath
+      `Launching Language Server '${
+        initializationOptions.serverPath
       }' with options:`,
       initializationOptions.serverArgs,
     );
