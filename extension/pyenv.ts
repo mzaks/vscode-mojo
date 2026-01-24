@@ -59,7 +59,7 @@ export class SDK {
     readonly visualizersPath: string,
     /// The path to the LLDB executor.
     readonly lldbPath: string,
-  ) { }
+  ) {}
 
   @Memoize()
   /// Checks if the version of LLDB shipped with this SDK supports Python scripting.
@@ -78,7 +78,8 @@ export class SDK {
         return true;
       } else {
         this.logger.info(
-          `Python scripting support in LLDB not found. The test script returned:\n${stdout
+          `Python scripting support in LLDB not found. The test script returned:\n${
+            stdout
           }\n${stderr}`,
         );
       }

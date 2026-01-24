@@ -87,9 +87,12 @@ Activating the Mojo Extension
       );
 
       this.pushSubscription(
-        vscode.commands.registerCommand('mojo.init.pixi.project.nightly', async () => {
-          await setupWorkspaceWithPixi(logger, this.pyenvManager);
-        }),
+        vscode.commands.registerCommand(
+          'mojo.init.pixi.project.nightly',
+          async () => {
+            await setupWorkspaceWithPixi(logger, this.pyenvManager);
+          },
+        ),
       );
 
       // Initialize the formatter.
